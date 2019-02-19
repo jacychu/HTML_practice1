@@ -1,78 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>HTML Page Structure | I am X</title>
-        <style>
-            body {
-                background-color: #FFF;
-                font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-            }
-            .no-border {
-                border:0px;
-            }
-            .border1 {
-                border:1px solid grey;
-            }
-            .border2 {
-                border:2px dashed rgb(187, 187, 187);
-            }
-            .html-bk {
-                background-color: #FFF0F0;
-            }
-            .body-bk, .head-bk {
-                background-color: #DDDDDD;
-            }
-            .box-bk {
-                background-color: rgb(241, 241, 241);
-            }
-            .cssborder-bk {
-                background-color: rgb(76, 175, 80);
-            }
-            .content-bk {
-                background-color: #FFF;
-            }
-            .center {
-                text-align: center;
-            }
-            .element {
-                margin: 15px;
-                padding: 5px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="border1 html-bk" style="padding:3px;margin:20px;">
-            &lt;html&gt;
-            <div class="border1 head-bk element">&lt;head&gt;
-                <div class="border1 element box-bk">
-                    &lt;title&gt;Page title&lt;/title&gt;
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple practice">    
+    <meta name="keywords" content="strcture">
+    <meta name="author" content="Jacy Chu">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Strcture</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../favicon.png">
+</head>
+
+<body>
+    <h2>Stucture</h2>
+    <div class="level1">
+    <p>&lt;html&gt;</p>
+    <!--head-->
+        <div class="level2">
+            <p>&lt;head&gt;</p>
+                <div class="level3">
+                    <p>&lt;title&gt;Page title&lt;/title&gt;</p>
                 </div>
-                &lt;/head&gt;
-            </div>
-            <div class="border1 body-bk element">
-                &lt;body&gt;
-                <div class="border1 box-bk element">
-                    <div class="border1 element">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
-                    <div class="border1 element">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+            <p>&lt;/head&gt;</p>
+        </div>
+        <br>
+    <!--body-->
+        <div class="level2">
+            <p>&lt;body&gt;</p>
+                <div class="level4">
+                    <div class="level3">
+                        <p>&lt;h1&gt;This is a heading.&lt;/h1&gt;</p>
+                    </div>
+                    <div class="level3">
+                        <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;</p>
+                    </div>
                 </div>
-                <br>
-                <div style="padding-left: 15px;">CSS BOX MODEL</div>
-                <div class="border2 box-bk" style="padding:15px 15px 30px 15px;margin:15px;">
-                    <div class="center">Margin</div>
-                    <div class="no-border cssborder-bk" style="padding:0px 15px 15px 15px;margin:15px;">
-                        <div class="center" style="padding: 5px 0px 0px 0px;">Border</div>
-                        <div class="no-border box-bk" style="padding:10px;margin:5px 10px 10px 10px;">
-                            <div class="center">Padding</div>
-                            <div class="border2 content-bk center" style="padding:45px;margin:10px 30px 30px 30px;">
-                                Content
-                            </div>
+
+                <h3>CSS BOX MODEL</h3>
+                <div class="level5">
+                    Margin
+                    <div class="level6">
+                        Border
+                        <div class="level7">
+                            Padding
+                            <div id="inner">Content</div>
                         </div>
                     </div>
                 </div>
-                &lt;/body&gt;
-            </div>
-             &lt;/html&gt;
+            <p>&lt;/body&gt;</p>
         </div>
-    </body>
+    <p>&lt;/html&gt;</p>
+    </div>
+    <br>
+    <div><a href="../index.html">Back</a></div>
+</body>
 </html>

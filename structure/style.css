@@ -1,0 +1,66 @@
+body {
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 0 15px 20px 15px;
+}
+
+.level1 {
+    background-color: #FFCCCC;
+    border: 1px solid;
+    padding: 0 20px;
+}
+
+.level2 {
+    background-color: #DCDCDC;
+    border: 1px solid;
+    padding: 0 20px;
+}
+
+.level3 {
+    background-color: white;
+    border: 1px solid;
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.level4 {
+    background-color: white;
+    border: 1px solid;
+    padding: 20px 20px 0 20px;
+}
+
+.level5 {
+    background-color: white;
+    border: 1px dashed gray;
+    padding: 10px 20px 20px 20px ;
+    text-align: center;
+}
+
+.level6 {
+    background-color: linen;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+    margin: 5px 5px 15px 5px;
+}
+
+.level7 {
+    background-color: white;
+    padding: 10px 25px 25px 25px;
+    text-align: center;
+    margin: 5px 5px 15px 5px;
+}
+
+#inner {
+    padding: 80px 20px 0 20px;
+    margin: 10px 20px 0 20px;
+    border: .5px dashed gray;
+    background-color: snow;
+    height: 100px;
+}
+
+a {
+    color: rosybrown;
+    font-weight: bold;
+}
