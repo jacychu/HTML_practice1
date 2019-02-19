@@ -1,0 +1,32 @@
+/* style reference */
+body {
+    background-color: #FF9999;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.level1 {
+    padding: 8px;
+    background-color: #FFCCCC;
+}
+.level2 {
+    padding: 8px;
+    background-color: #FFFFFF;
+}
+.level3 {
+    padding: 8px;
+    background-color: #FFCC66;
+}
+#inner {
+    padding: 8px;
+    margin: 10px 50px;
+    border: 2px dashed #FFFFFF;
+    background-color: #663333;
+}
+
+a {
+    color: black;
+    font-weight: bold;
+}
