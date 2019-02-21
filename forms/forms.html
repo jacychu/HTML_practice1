@@ -67,9 +67,107 @@
             <tr><td><input type="radio" name="q5" value="1"></td><td>Go mountain climbing.</td></tr>
         </table>
         </div>
+
+        <div id="q6">
+        <div class="question">6. How often do you take selfies?</div>
+        <table>
+            <tr><td><input type="radio" name="q6" value="3"></td><td>Everyday definitely</td></tr>
+            <tr><td><input type="radio" name="q6" value="2"></td><td>Once a week</td></tr>
+            <tr><td><input type="radio" name="q6" value="1"></td><td>Once a month</td></tr>
+            <tr><td><input type="radio" name="q6" value="0"></td><td>Take selfies? Why?</td></tr>
+        </table>
+        </div>
+
+        <div id="q7">
+        <div class="question">7. What kind of job do you prefer?</div>
+        <table>
+            <tr><td><input type="radio" name="q7" value="2"></td><td>Gourmet</td></tr>
+            <tr><td><input type="radio" name="q7" value="0"></td><td>Teacher</td></tr>
+            <tr><td><input type="radio" name="q7" value="3"></td><td>Photographer</td></tr>
+            <tr><td><input type="radio" name="q7" value="1"></td><td>Reporter</td></tr>
+        </table>
+        </div>
+
+        <div id="q8">
+        <div class="question">8. How would you describe your style?</div>
+        <table>
+            <tr><td><input type="radio" name="q8" value="1"></td><td>Classically preppy.</td></tr>
+            <tr><td><input type="radio" name="q8" value="2"></td><td>   I live in my designer hoodie.</td></tr>
+            <tr><td><input type="radio" name="q8" value="0"></td><td>Lululemon addict.</td></tr>
+            <tr><td><input type="radio" name="q8" value="3"></td><td>Underweight lumberjack.</td></tr>
+        </table>
+        </div>
+
+        <div id="q9">
+        <div class="question">9. Do you wanna keep pets?</div>
+        <table>
+            <tr><td><input type="radio" name="q9" value="0"></td><td>Nah, not a big fan.</td></tr>
+            <tr><td><input type="radio" name="q9" value="1"></td><td>Dogs no doubt.</td></tr>
+            <tr><td><input type="radio" name="q9" value="3"></td><td>I keep squirrels.</td></tr>
+            <tr><td><input type="radio" name="q9" value="2"></td><td>Cats definitely.</td></tr>
+        </table>
+        </div>
+
+        <div id="q10">
+        <div class="question">10. Did you go to art school?</div>
+        <table>
+            <tr><td><input type="radio" name="q10" value="3"></td><td>I went to school but I dopped out to focus more on my craft.</td></tr>
+            <tr><td><input type="radio" name="q10" value="0"></td><td>Yes.</td></tr>
+            <tr><td><input type="radio" name="q10" value="2"></td><td>No.</td></tr>
+            <tr><td><input type="radio" name="q10" value="1"></td><td>Who goes to art school?</td></tr>
+        </table>
+        </div>
+    </div>
+
+    <div>
+        <h3 class="other-q">More Questions</h3>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="question">1. Fill in your name and your email.</div>
+                <input class="infotop" type="text" name="name" id="idName" placeholder="Input your name" size="50"><br>
+                <input class="info" type="text" name="email" id="idemail" placeholder="Input your email" size="50">
+            <div class="question">2. What's your gender?</div>
+                <br>
+                <div class="check"><input type="radio" name="gender" id="idMale" value="m"><label for="idMale">   Male</label></div>
+                <div class="check"><input type="radio" name="gender" id="idFemale" value="f"><label for="idFemale">  Female</div>
+                <div class="check"><input type="radio" name="gender" id="idOther" value="o"> <label for="idOther"> Other</div>
+            <div class="question">3. What's your age?</div>
+                <br>
+                <select name="age">
+                    <option value="0-10">0-10</option>
+                    <option value="10-20">10-20</option>
+                    <option value="20-30">20-30</option>
+                    <option value="30-40">30-40</option>
+                    <option value="40-50">40-50</option>
+                    <option value="50-60">50-60</option>
+                    <option value="60up">more than 60</option>
+                </select>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend>Other Questions</legend>
+            <div class="question">1. How do you get around?</div>
+                <br>
+                <div class="check"><input type="checkbox" name="transport" id="idMRT" value="MRT"><label for="idMRT">   MRT</label></div>
+                <div class="check"><input type="checkbox" name="transport" id="idBus" value="Bus"><label for="idBus">  Bus</div>
+                <div class="check"><input type="checkbox" name="transport" id="idBike" value="Bike"> <label for="idBike"> Bike</div>
+                <div class="check"><input type="checkbox" name="transport" id="idFeet" value="Feet"> <label for="idFeet"> Feet</div>
+            <div class="question">2. What's your favorite color?</div>
+                <br>
+                <input class="info" type="color" value="#4d2b1c">
+            <div class="question">3. Write something about you.</div>
+                <br>
+                <textarea name="comments" rows="20" maxlength="200" cols="100"></textarea>
+        </fieldset>
     </div>
         <input id="submit_btn" type="submit" value="submit">
     </form>
+
 
     <div><a href="../index.html">Back</a></div>
     <br><br>
