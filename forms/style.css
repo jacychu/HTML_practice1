@@ -1,0 +1,92 @@
+/* style reference */
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: seashell;
+}
+
+a {
+    color: rosybrown;
+    font-weight: bold;
+}
+
+img {
+    width: 70%;
+    margin: 0 0 30px 0;
+}
+
+.question {
+    background-color: white;
+    width: 900px;
+    text-align: left;
+    padding: 10px 20px 10px 20px;
+}
+
+.form1 {
+    padding-left: 80px;
+}
+
+table {
+    margin: 5px 0 20px 40px;
+}
+
+td {
+    text-align: left;
+    padding: 5px;
+}
+
+.other-q {
+    border: 2px dotted;
+    margin: 40px;
+    padding: 30px;
+}
+
+fieldset {
+    margin: 40px;
+    border: 1px solid #4d2b1c;
+    text-align: left;
+    padding: 30px;
+}
+
+.infotop {
+    height: 30px;
+    margin: 35px 0 35px 40px;
+    padding-left: 5px;
+}
+
+.info {
+    height: 30px;
+    margin: 0px 0 35px 40px;
+    padding-left: 5px;
+}
+
+.check {
+    margin: 0px 0 20px 40px;
+    padding-left: 5px;
+}
+
+select {
+    margin: 0 0 0 40px;
+}
+
+textarea {
+    height: 200px;
+    margin: 0px 0 35px 40px;
+    padding-left: 5px;
+}
+
+#submit_btn {
+    height: 38px;
+    width: 100px;
+    padding: 0;
+    font-size: 20px;
+    color: seashell;
+    background-color: #4d2b1c;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    margin: 40px 20px 30px 20px;
+}
