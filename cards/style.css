@@ -4,18 +4,64 @@ body {
     color: black;
     font-size: 20px;
     letter-spacing: 2px;
-    text-align: center;
 }
 
+.cards {
+    position: fixed;
+    top: 120px;
+    left: 3px;
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 120px;
+}
+
+#drag1 {
+    position: absolute;
+    left: 3.5px;
+}
+
+#drag2 {
+    position: absolute;
+    left: 89.5px;
+}
+
+#drag3 {
+    position: absolute;
+    left: 176.5px;
+}
+
+#drag4 {
+    position: absolute;
+    left: 262.5px;
+}
+
+#drag5 {
+    position: absolute;
+    left: 348.5px;
+}
+
+#drag6 {
+    position: absolute;
+    left: 435.5px;
+}
+
+
+h2,h3 {
+    margin: 10px;
+}
 .row {
-    margin: 40px 30px 40px 30px;
+    margin: 10px 30px 40px 30px;
 }
 
 .back {
+    position: absolute;
+    top: 420px;
     color: rosybrown;
     font-weight: bold;
     font-size: 20px;
     text-decoration: underline;
+    margin: 10px;
 }
 
 .back:hover {
@@ -23,13 +69,19 @@ body {
 }
 
 #red-table {
+    position: fixed;
+    top: 280px;
+    left: 10px;
     background-image: url("red.png");
-    width: 500px;
+    width: 545px;
     height: 120px;
 }
 
 #black-table {
+    position:fixed;
+    top: 280px;
+    left: 545px;
     background-image: url("black.png");
-    width: 500px;
+    width: 540px;
     height: 120px;
 }
