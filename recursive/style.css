@@ -5,28 +5,90 @@ body {
     font-family: Arial, sans-serif;
     font-size: 20px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .level1 {
     padding: 8px;
     background-color: #FFCCCC;
 }
+
+.level1:hover {
+    background-color: red;
+}
+
 .level2 {
     padding: 8px;
     background-color: #FFFFFF;
 }
+
+.level2:hover {
+    background-color: blue;
+}
+
+
 .level3 {
     padding: 8px;
     background-color: #FFCC66;
 }
-#inner {
-    padding: 8px;
-    margin: 10px 50px;
-    border: 2px dashed #FFFFFF;
-    background-color: #663333;
+
+.level3:hover {
+    background-color: black;
 }
 
-a {
-    color: black;
-    font-weight: bold;
+.inner {
+    padding: 8px;
+    margin: 10px 50px;
+    height: 90px;
+    border: 2px dashed #FFFFFF;
+    background-color: lightgray;
+    color: lightgray;
+    font-size: 30px;
+    vertical-align: middle;
 }
+
+.inner:hover {
+    background-color: white;
+    color: red;
+}
+
+.back-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rosybrown;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 0 50px 0;
+}
+
+.back-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.back-button span:after {
+    content: '\2190';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -80px;
+}
+
+.back-button:hover span {
+    padding-left: 25px;
+}
+
+.back-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+

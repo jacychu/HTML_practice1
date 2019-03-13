@@ -12,10 +12,26 @@ body {
     padding: 0 20px;
 }
 
+.level1:hover {
+    background-color: darkred;
+}
+
+.level1:hover > p{
+    color: white;
+}
+
 .level2 {
     background-color: #DCDCDC;
     border: 1px solid;
     padding: 0 20px;
+}
+
+.level2:hover {
+    background-color: darkgray;
+}
+
+.level2:hover > p{
+    color: white;
 }
 
 .level3 {
@@ -25,17 +41,35 @@ body {
     margin-bottom: 20px;
 }
 
+.level3:hover {
+    background-color: black;
+}
+
+.level3:hover > p{
+    color: white;
+}
+
 .level4 {
     background-color: white;
     border: 1px solid;
     padding: 20px 20px 0 20px;
 }
 
+
 .level5 {
     background-color: white;
     border: 1px dashed gray;
     padding: 10px 20px 20px 20px ;
     text-align: center;
+}
+
+
+.level5:hover {
+    background-color: black;
+}
+
+.level5:hover > p{
+    color: white;
 }
 
 .level6 {
@@ -45,11 +79,27 @@ body {
     margin: 5px 5px 15px 5px;
 }
 
+.level6:hover {
+    background-color: red;
+}
+
+.level6:hover > p{
+    color: white;
+}
+
 .level7 {
     background-color: white;
     padding: 10px 25px 25px 25px;
     text-align: center;
     margin: 5px 5px 15px 5px;
+}
+
+.level7:hover {
+    background-color: #663300;
+}
+
+.level7:hover > p{
+    color: white;
 }
 
 #inner {
@@ -58,6 +108,11 @@ body {
     border: .5px dashed gray;
     background-color: snow;
     height: 100px;
+}
+
+#inner:hover {
+    background-color: maroon;
+    color: white;
 }
 
 .back-button {
