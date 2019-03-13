@@ -1,6 +1,6 @@
-
-body {
-    font-family: Arial, sans-serif;
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+    font-family: 'Noto Sans TC', sans-serif;
     color: #5f5f5f;
     font-size: 20px;
     letter-spacing: 2px;

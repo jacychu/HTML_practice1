@@ -7,65 +7,68 @@
     <meta name="author" content="Jacy Chu">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Three Tables</title>
+    <link href="reset.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../favicon.png">
 </head>
 <body>
-<div id="table_style">
+<div class="table_style">
     <h2>Three Tables</h2>
     <table class="form">
+        <p>1. You may input some info below.</p>
         <tr>
-            <td class="block" rowspan="2"></td>
-            <td class="block"colspan="2"></td>
-            <td class="block"></td>
+            <td class="block" rowspan="2"><input type="text" id="" name="" value=""></td>
+            <td class="block"colspan="2"><input type="text" id="" name="" value=""></td>
+            <td class="block"><input type="text" id="" name="" value=""></td>
         </tr>
 
         <tr>
-            <td class="block"></td>
-            <td class="block"></td>
-            <td class="block"></td>
+            <td class="block"><input type="text" id="" name="" value=""></td>
+            <td class="block"><input type="text" id="" name="" value=""></td>
+            <td class="block"><input type="text" id="" name="" value=""></td>
         </tr>
 
         <tr>
-            <td class="block" colspan="2"></td>
-            <td class="block"></td>
-            <td class="block"></td>
+            <td class="block" colspan="2"><input type="text" id="" name="" value=""></td>
+            <td class="block"><input type="text" id="" name="" value=""></td>
+            <td class="block"><input type="text" id="" name="" value=""></td>
         </tr>
 
         <tr>
-            <td class="block"></td>
-            <td class="block"></td>
-            <td class="block" colspan="2"></td>
+            <td class="block"><input type="text" id="" name="" value=""></td>
+            <td class="block"><input type="text" id="" name="" value=""></td>
+            <td class="block" colspan="2"><input type="text" id="" name="" value=""></td>
         </tr>
     </table>
-
+    <br>
     <table class="form">
+        <p>2. 交叉分析表 (Hover!)</p>
         <tr>
-            <td class="block" colspan="2" rowspan="2">交叉分析表</td>
-            <td class="block" colspan="2">ID</td>
+            <td class="block2" colspan="2" rowspan="2">交叉分析表</td>
+            <td class="block2" colspan="2">ID</td>
         </tr>
 
         <tr>
-            <td class="block">TW000001</td>
-            <td class="block">TW000002</td>
+            <td class="block2">TW000001</td>
+            <td class="block2">TW000002</td>
         </tr>
 
         <tr>
-            <td class="block" rowspan="2">SPI</td>
-            <td class="block">不良片數</td>
-            <td class="block">101</td>
-            <td class="block">99</td>
+            <td class="block2" rowspan="2">SPI</td>
+            <td class="block2">不良片數</td>
+            <td class="block2">101</td>
+            <td class="block3">99</td>
         </tr>
 
         <tr>
-            <td class="block">正常片數</td>
-            <td class="block">9995</td>
-            <td class="block">8966</td>
+            <td class="block2">正常片數</td>
+            <td class="block2">9995</td>
+            <td class="block2">8966</td>
         </tr>
-        
     </table>
-
+    <br>
     <table id="color">
+        <p>3. Color Table (Hover!)</p>
         <div>
             <tr>
                 <td class="CellWithComment" style="background-color: #330000"><span class="CellComment">#330000</span></td>
@@ -213,7 +216,8 @@
             </tr>
         </div>
     </table>
-    <div><a href="../index.html">Back</a></div>
+    <br>
+    <div><a class="back-button" href="../index.html"><span>Back</span></a></div>
 </div>
 </body>
 </html>
