@@ -7,13 +7,88 @@ body {
     text-align: center;
 }
 
-a {
-    color: rosybrown;
-    font-weight: bold;
+#box-bear {
+    width: 260px;
+    height: 200px;
+    background: url(pic.png) 0px 0px;
 }
+
+#box-a {
+    width: 260px;
+    height: 200px;
+    background: url(pic.png) 1040px 0px;
+}
+
+#box-b {
+    width: 260px;
+    height: 200px;
+    background: url(pic.png) 780px 0px;
+}
+
+#box-c {
+    width: 260px;
+    height: 200px;
+    background: url(pic.png) 520px 0px;
+}
+
+#box-empty {
+    width: 260px;
+    height: 200px;
+    background: url(pic.png) 260px 0px;
+}
+
 
 .three-box {
-    margin: 50px 20px 50px 20px;
+    display: flex;
+    justify-content: center;
 }
 
+@media only screen and (max-width: 820px){
+    .three-box {
+      display: flex;
+      flex-direction: column;
+    }
+}
+
+
+.back-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rosybrown;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 0 50px 0;
+}
+
+.back-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.back-button span:after {
+    content: '\2190';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -80px;
+    transition: 0.5s;
+}
+
+.back-button:hover span {
+    padding-left: 25px;
+}
+
+.back-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
 
