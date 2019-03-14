@@ -8,14 +8,14 @@ body {
     background-color: seashell;
 }
 
-a {
-    color: rosybrown;
-    font-weight: bold;
-}
-
 img {
     width: 70%;
     margin: 0 0 30px 0;
+}
+
+.answer {
+    margin: 20px 10px 30px 50px;
+    text-align: left;
 }
 
 .question {
@@ -24,6 +24,20 @@ img {
     text-align: left;
     padding: 10px 20px 10px 20px;
 }
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 
 .form1 {
     padding-left: 80px;
@@ -43,6 +57,140 @@ td {
     margin: 40px;
     padding: 30px;
 }
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: pink;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #ff6666;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* The container */
+.container2 {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark2 {
+    background-color: pink;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container2 input:checked ~ .checkmark2 {
+    background-color: #ff6666;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container2 input:checked ~ .checkmark2:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container2 .checkmark2:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 
 fieldset {
     margin: 40px;
@@ -68,9 +216,55 @@ fieldset {
     padding-left: 5px;
 }
 
+
 select {
-    margin: 0 0 0 40px;
+    position: relative;
 }
+
+/* Style by class. Effects the text of the contained options. */
+.blueText {
+    color: black;
+    background-color: white;
+    width: 400px;
+    height: 35px;
+    font-size: 20px;
+}
+
+.blueText:hover {
+    border: 2px solid #ff6666;
+}
+
+/* Style by id. Effects position of the select drop down. */
+#styledSelect {
+    left: 45px;
+}
+
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 40%;
+    margin: 20px 20px 20px 50px;
+}
+
+.icon {
+    padding: 10px;
+    background: #ff6666;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 3px solid #ff6666;
+}
+
 
 textarea {
     height: 200px;
@@ -78,15 +272,64 @@ textarea {
     padding-left: 5px;
 }
 
-#submit_btn {
-    height: 38px;
-    width: 100px;
-    padding: 0;
-    font-size: 20px;
-    color: seashell;
-    background-color: #4d2b1c;
-    letter-spacing: 2px;
-    cursor: pointer;
-    border: none;
-    margin: 40px 20px 30px 20px;
+textarea:focus, textarea:hover {
+    border: 2px solid #ff6666;
 }
+
+#submit_btn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rosybrown;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 190px;
+    height: 64px;
+    cursor: pointer;
+    margin: 0 10px 50px 0;
+    letter-spacing: 3px;
+}
+
+.back-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rosybrown;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 0 50px 10px;
+}
+
+.back-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.back-button span:after {
+    content: '\2190';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -80px;
+}
+
+.back-button:hover span {
+    padding-left: 25px;
+}
+
+.back-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
