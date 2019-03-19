@@ -39,11 +39,13 @@ body {
 }
 
 #poker11 {
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    float: left;
     left: 0px;
     width: 74px;
+    height: 100%;
     background: url('cards52.png') -813px -345px;
-    z-index: 2;
 }
 
 .poker2 {
@@ -54,9 +56,12 @@ body {
 }
 
 #poker12 {
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    float: left;
     left: 0px;
     width: 74px;
+    height: 100%;
     background: url('cards52.png') -296px 0;
 }
 
@@ -68,9 +73,12 @@ body {
 }
 
 #poker13 {
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    float: right;
     left: 0px;
     width: 74px;
+    height: 100%;
     background: url('cards52.png') -148px -115px;
 }
 
@@ -82,9 +90,12 @@ body {
 }
 
 #poker14 {
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    float: right;
     left: 0px;
     width: 74px;
+    height: 100%;
     background: url('cards52.png') -74px -230px;
 }
 
@@ -96,9 +107,12 @@ body {
 }
 
 #poker15 {
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    float: left;
     left: 0px;
     width: 74px;
+    height: 100%;
     background: url('cards52.png') -370px 0;
 }
 
@@ -110,9 +124,12 @@ body {
 }
 
 #poker16 {
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    float: right;
     left: 0px;
     width: 74px;
+    height: 100%;
     background: url('cards52.png') -739px -115px;
 }
 
