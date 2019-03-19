@@ -4,84 +4,174 @@ body {
     color: black;
     font-size: 20px;
     letter-spacing: 2px;
+    text-align: center;
 }
 
-/*.cards {
-    position: fixed;
-    top: 120px;
-    left: 3px;
-    background-image: url("bg.png");
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 120px;
-}*/
-
-#drag1 {
-    position: absolute;
-    left: 3.5px;
-}
-
-#drag2 {
-    position: absolute;
-    left: 89.5px;
-}
-
-#drag3 {
-    position: absolute;
-    left: 176.5px;
-}
-
-#drag4 {
-    position: absolute;
-    left: 262.5px;
-}
-
-#drag5 {
-    position: absolute;
-    left: 348.5px;
-}
-
-#drag6 {
-    position: absolute;
-    left: 435.5px;
-}
-
-
-h2,h3 {
-    margin: 10px;
-}
 .row {
-    margin: 10px 30px 40px 30px;
+    width: 460px;
+    height: 200px;
+    margin: auto;
+    display: inline-block; 
 }
 
-.back {
+.row2 {
+    top: 300px;
+}
+
+#navlist {
+    position: relative;
+}
+
+#navlist div {
+    margin: 0;
+    padding: 0;
+    list-style: none;
     position: absolute;
-    top: 420px;
-    color: rosybrown;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: underline;
-    margin: 10px;
+    top: 0;
+    height: 115px;
 }
 
-.back:hover {
-    color: rosybrown;
+.poker1 {
+    position: relative;
+    left: 0px;
+    width: 74px;
+    background: url('cards52w.png') -813px -345px;
+}
+
+#poker11 {
+    position: absolute;
+    left: 0px;
+    width: 74px;
+    background: url('cards52.png') -813px -345px;
+    z-index: 2;
+}
+
+.poker2 {
+    position: relative;
+    left: 75px;
+    width: 74px;
+    background: url('cards52w.png') -296px 0;
+}
+
+#poker12 {
+    position: absolute;
+    left: 0px;
+    width: 74px;
+    background: url('cards52.png') -296px 0;
+}
+
+.poker3 {
+    position: relative;
+    left: 150px;
+    width: 74px;
+    background: url('cards52w.png') -148px -115px;
+}
+
+#poker13 {
+    position: absolute;
+    left: 0px;
+    width: 74px;
+    background: url('cards52.png') -148px -115px;
+}
+
+.poker4 {
+    position: relative;
+    left: 225px;
+    width: 74px;
+    background: url('cards52w.png') -74px -230px;
+}
+
+#poker14 {
+    position: absolute;
+    left: 0px;
+    width: 74px;
+    background: url('cards52.png') -74px -230px;
+}
+
+.poker5 {
+    position: relative;
+    left: 300px;
+    width: 74px;
+    background: url('cards52w.png') -370px 0;
+}
+
+#poker15 {
+    position: absolute;
+    left: 0px;
+    width: 74px;
+    background: url('cards52.png') -370px 0;
+}
+
+.poker6 {
+    position: relative;
+    left: 375px;
+    width: 74px;
+    background: url('cards52w.png') -739px -115px;
+}
+
+#poker16 {
+    position: absolute;
+    left: 0px;
+    width: 74px;
+    background: url('cards52.png') -739px -115px;
 }
 
 #red-table {
-    position: fixed;
-    top: 280px;
-    left: 10px;
+    position: relative;
+    display: inline-block;
     background-image: url('red.png');
-    width: 545px;
-    height: 120px;
+    width: 500px;
+    height: 115px;
 }
 
 #black-table {
-    position:fixed;
-    top: 280px;
-    left: 545px;
+    position: relative;
+    display: inline-block;
     background-image: url('black.png');
-    width: 540px;
-    height: 120px;
+    width: 500px;
+    height: 115px;
 }
+
+.back-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rosybrown;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 0 50px 0;
+}
+
+.back-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.back-button span:after {
+    content: '\2190';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -80px;
+    transition: 0.5s;
+}
+
+.back-button:hover span {
+    padding-left: 25px;
+}
+
+.back-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
