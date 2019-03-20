@@ -1,0 +1,129 @@
+/* style reference */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    height: 100%;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    -ms-transform: translate(-50%,-50%) scale(1.2);
+    -webkit-transform: translate(-50%,-50%) scale(1.2);
+    transform: translate(-50%,-50%) scale(1.2);
+}
+
+.wrapper .swing {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 230px;
+    left: 38%;
+    transform-origin: center top;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+
+.wrapper .swing:hover {
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+.wrapper .swing .swing-rod {
+    position: absolute;
+    width: 5px;
+    height: 180px;
+    left: 50%;
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    background: #AFABAB;
+}
+
+.wrapper .swing .swing-rod2 {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    top: -150px;
+    left: 12px;
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    background: #AFABAB;
+}
+
+.wrapper .swing:nth-of-type(1) {
+    animation-name: swing-1;
+}
+
+@keyframes swing-1{
+    from{
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg)
+    }to{
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(20deg)
+    }
+}
+
+.back-button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rosybrown;
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    width: 150px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0 0 50px 0;
+}
+
+.back-button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.back-button span:after {
+    content: '\2190';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -80px;
+    transition: 0.5s;
+}
+
+.back-button:hover span {
+    padding-left: 25px;
+}
+
+.back-button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
