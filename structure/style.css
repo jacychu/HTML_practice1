@@ -55,14 +55,12 @@ body {
     padding: 20px 20px 0 20px;
 }
 
-
 .level5 {
     background-color: white;
     border: 1px dashed gray;
     padding: 10px 20px 20px 20px ;
     text-align: center;
 }
-
 
 .level5:hover {
     background-color: black;
@@ -155,5 +153,3 @@ body {
     opacity: 1;
     right: 0;
 }
-
-
