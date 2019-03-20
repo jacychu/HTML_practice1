@@ -37,7 +37,6 @@ body {
     background: url(pic.png) 260px 0px;
 }
 
-
 .three-box {
     display: flex;
     justify-content: center;
@@ -49,7 +48,6 @@ body {
       flex-direction: column;
     }
 }
-
 
 .back-button {
     display: inline-block;
@@ -89,4 +87,3 @@ body {
     opacity: 1;
     right: 0;
 }
-

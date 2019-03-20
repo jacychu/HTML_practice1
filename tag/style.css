@@ -7,7 +7,6 @@ body {
 
 #table_style{
     margin: 20px 50px 50px 50px;
-
 }
 
 table{
@@ -39,7 +38,6 @@ tr:nth-child(3n+0) {
     background: honeydew;
 }
 
-
 thead {
     border: 1px solid black;
     border-collapse: collapse;
@@ -69,7 +67,6 @@ th {
     height: 40px;
     min-width: 100px;
     padding-left:5px;
-
 }
 
 .description{
@@ -80,7 +77,6 @@ th {
     height: 40px;
     min-width: 250px;
     padding-left:5px;
-
 }
 
 .demonstration{
@@ -91,7 +87,6 @@ th {
     height: 40px;
     min-width: 350px;
     padding-left:5px;
-
 }
 
 .back-button {
@@ -134,14 +129,3 @@ th {
     opacity: 1;
     right: 0;
 }
-
-
-
-
-
-
-
-
-
-
-

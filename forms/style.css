@@ -38,7 +38,6 @@ img {
     user-select: none;
 }
 
-
 .form1 {
     padding-left: 80px;
 }
@@ -122,7 +121,6 @@ td {
     background: white;
 }
 
-
 /* The container */
 .container2 {
     display: block;
@@ -191,7 +189,6 @@ td {
     transform: rotate(45deg);
 }
 
-
 fieldset {
     margin: 40px;
     border: 1px solid #4d2b1c;
@@ -216,7 +213,6 @@ fieldset {
     padding-left: 5px;
 }
 
-
 select {
     position: relative;
 }
@@ -238,7 +234,6 @@ select {
 #styledSelect {
     left: 45px;
 }
-
 
 .input-container {
     display: -ms-flexbox; /* IE10 */
@@ -264,7 +259,6 @@ select {
 .input-field:focus {
     outline: 2px solid #ff6666;
 }
-
 
 textarea {
     height: 200px;
@@ -331,5 +325,3 @@ textarea:focus, textarea:hover {
     opacity: 1;
     right: 0;
 }
-
-
