@@ -23,6 +23,7 @@ img {
     width: 100%;
     margin: auto;
 }
+
 .wrapper {
     position: absolute;
     top: 50%;
@@ -140,6 +141,42 @@ img {
 }
 
 @keyframes swing-1{
+    from{
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg)
+    }to{
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(20deg)
+    }
+}
+
+@-webkit-keyframes swing-1{
+    from{
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg)
+    }to{
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(20deg)
+    }
+}
+
+@-moz-keyframes swing-1{
+    from{
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(-20deg)
+    }to{
+        -ms-transform: rotate(-20deg);
+        -webkit-transform: rotate(-20deg);
+        transform: rotate(20deg)
+    }
+}
+
+@-o-keyframes swing-1{
     from{
         -ms-transform: rotate(-20deg);
         -webkit-transform: rotate(-20deg);
