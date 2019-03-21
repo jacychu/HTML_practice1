@@ -13,10 +13,16 @@ body{
 }
 
 img {
-    width: 300px;
+    width: 250px;
     height: 100%;
 }
 
+.row {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
 .wrapper {
     position: absolute;
     top: 50%;
@@ -32,7 +38,7 @@ img {
     position: absolute;
     width: 40px;
     height: 100%;
-    top: 230px;
+    top: 50px;
     left: 38%;
     transform-origin: center top;
     animation-duration: 0.5s;
@@ -48,8 +54,8 @@ img {
 
 .wrapper .swing .swing-rod {
     position: absolute;
-    width: 5px;
-    height: 180px;
+    width: 3px;
+    height: 80px;
     left: 50%;
     -ms-transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
@@ -60,11 +66,65 @@ img {
 .wrapper .swing .swing-rod2 {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 100%;
-    top: -150px;
-    left: 12px;
+    top: -60px;
+    left: 16px;
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    background: #AFABAB;
+}
+
+.wrapper2 {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    -ms-transform: translate(-50%,-50%) scale(1.2);
+    -webkit-transform: translate(-50%,-50%) scale(1.2);
+    transform: translate(-50%,-50%) scale(1.2);
+}
+
+.wrapper2 .swing2 {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 173px;
+    left: 38%;
+    transform-origin: center top;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-play-state: paused;
+}
+
+.wrapper2 .swing2:hover {
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+.wrapper2 .swing2 .swing-rod3 {
+    position: absolute;
+    width: 3px;
+    height: 80px;
+    left: 50%;
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    background: #AFABAB;
+}
+
+.wrapper2 .swing2 .swing-rod4 {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    top: -40px;
+    left: 16px;
     -ms-transform: translateY(-100%);
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
@@ -72,6 +132,10 @@ img {
 }
 
 .wrapper .swing:nth-of-type(1) {
+    animation-name: swing-1;
+}
+
+.wrapper2 .swing2:nth-of-type(1) {
     animation-name: swing-1;
 }
 
@@ -100,7 +164,7 @@ img {
     width: 150px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 0 0 50px 0;
+    margin: 0 0 5px 0;
 }
 
 .back-button span {
