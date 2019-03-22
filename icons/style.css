@@ -18,30 +18,30 @@ body{
 }
 
 .icon {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 115px;
     font-size: 10px;
+    margin: 10px;
     display: inline-block;
 }
 
 i {
     display: block;
     position: relative;
-    top: 20px;
-    width: 100px;
-    height: 60px;
-    padding: 5px;
+    padding-top: 13px;
+    width: 130px;
+    height: 73px;
     font-size: 50px;
     color: dimgray;
 }
 
 div p {
     position: relative;
-    top: 10px;
 }
 
 .book:hover {
     background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dark:hover {
