@@ -23,6 +23,7 @@ body{
     font-size: 10px;
     margin: 10px;
     display: inline-block;
+    border-radius: 10px;
 }
 
 i {
@@ -45,6 +46,7 @@ div p {
 }
 
 .dark:hover {
+    border-radius: 10px 10px 0 0;
     background-color: maroon;
     color: white; 
 }
