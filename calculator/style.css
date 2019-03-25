@@ -81,6 +81,12 @@ button:hover {
     background-color: #eaeaea;
 }
 
+button:active, button:focus {
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}
+
 .back-button {
     display: inline-block;
     border-radius: 4px;
