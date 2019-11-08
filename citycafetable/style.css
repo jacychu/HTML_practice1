@@ -40,6 +40,10 @@ li {
     cursor: pointer;
 }
 
+.item:hover {
+    background: #ffcab5;
+}
+
 .back-button {
     display: inline-block;
     border-radius: 4px;
