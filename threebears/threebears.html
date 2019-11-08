@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple practice">
+    <meta name="keywords" content="table">
+    <meta name="author" content="Jacy Chu">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Three Bears</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+<script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+<style>
+    body {
+        padding: 15px;
+        font-family: 'Noto Sans TC', sans-serif;
+        color: black;
+        font-size: 16px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    button {
+        display: inline-block;
+        background-color: #ffe6e0;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+        font-size: 13px;
+        padding: 5px;
+        width: 150px;
+        cursor: pointer;
+        margin: 0 0 5px 0;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
+    .back-button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: rosybrown;
+        border: none;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        padding: 20px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 0 0 50px 0;
+    }
+
+    .back-button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .back-button span:after {
+        content: '\2190';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        left: -80px;
+        transition: 0.5s;
+    }
+
+    .back-button:hover span {
+        padding-left: 25px;
+    }
+
+    .back-button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+</style>
+</head>
+<body>
+<h1>Three Little Bears</h1>
+<p>一顆按鈕可按2次 有兩個不同的動作</p>
+<div id = "databinding1">
+<br>
+<button v-on:click = "show = !show">滾出跳躍!</button>
+<br>
+<transition
+    name="custom-classes-transition"
+    enter-active-class="animated rollIn"
+    leave-active-class="animated bounce"
+>
+    <div v-if="show"><img src="b1.png"></div>
+</transition>
+</div>
+<div id = "databinding2">
+<br>
+<button v-on:click = "show = !show">上升旋轉!</button>
+<br>
+<transition
+    name="custom-classes-transition"
+    enter-active-class="animated fadeInUp"
+    leave-active-class="animated rotateOut"
+>
+    <div v-if="show"><img src="b2.png"></div>
+</transition>
+</div>
+<div id = "databinding3">
+<br>
+<button v-on:click = "show = !show">浮現奔跑!</button>
+<br>
+<transition
+    name="custom-classes-transition"
+    enter-active-class="animated flash"
+    leave-active-class="animated bounceOutRight"
+>
+    <div v-if="show"><img src="b3.png"></div>
+</transition>
+</div>
+
+    <br>
+    <div><a class="back-button" href="../index.html"><span>Back</span></a></div>
+
+<script type = "text/javascript">
+let d1 = new Vue({
+    el: '#databinding1',
+    data: {
+        show: false
+    }
+})
+let d2 = new Vue({
+    el: '#databinding2',
+    data: {
+        show: false
+    }
+})
+let d3 = new Vue({
+    el: '#databinding3',
+    data: {
+        show: false
+    }
+})
+</script>
+</body>
+</html>
