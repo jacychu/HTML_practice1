@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A simple practice">
+    <meta name="keywords" content="table">
+    <meta name="author" content="Jacy Chu">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Parking Lot</title>
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            color: black;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-align: center;
+            background-color: seashell;
+        }
+
+        table {
+            border: 2px solid black;
+            width: 600px;
+            height: 350px;
+            background: #999;
+        }
+
+        td {
+            border: 1px solid white;
+            width: 28px;
+        }
+
+        .circle {
+            background: beige;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-left: 60px;
+            box-shadow: 0 0 0 25px lightblue;
+        }
+
+        textarea[type=text] {
+            box-sizing: border-box;
+            border-collapse: collapse;
+            border: none;
+            height: 98%;
+            width: 99%;
+            resize: none;
+            white-space: normal;
+            word-wrap: break-word;
+            word-break: break-all;
+            background-color: #999;
+            overflow: hidden;
+        }
+
+        textarea[type=text]:hover {
+            border: .5px solid lightblue;
+        }
+
+        .back-button {
+            display: inline-block;
+            border-radius: 4px;
+            background-color: rosybrown;
+            border: none;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            width: 150px;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 0 0 50px 0;
+        }
+
+        .back-button span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        .back-button span:after {
+            content: '\2190';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            left: -80px;
+            transition: 0.5s;
+        }
+
+        .back-button:hover span {
+            padding-left: 25px;
+        }
+
+        .back-button:hover span:after {
+            opacity: 1;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div style="width: 620px; margin: auto; padding: 10px 0 20px 0">
+        <h2>Parking Lot</h2>
+        <table spellcheck="false">
+            <tr>
+                <td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td style="border: none;"></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td>
+                <td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td>
+            </tr>
+            <tr><td style="border: none;" colspan="12"></td></tr>
+            <tr>
+                <td style="border: none;"></td><td style="border: none;" colspan="10"><div class="circle"></div></td>
+
+            </tr>
+            <tr><td style="border: none;" colspan="12"></td></tr>
+            <tr>
+                <td style="border: none;" colspan="3"></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td>
+                <td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td><td><textarea type="text"></textarea></td>
+            </tr>
+        </table>
+        <p id="time"></p>
+    <br>
+    <div><a class="back-button" href="../index.html"><span>Back</span></a></div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+
+        $("textarea").change(function() {
+            if($(this).val() == '') {
+                $(this).css({'background-color':'#999'});
+            } else {
+                $(this).css({'background-color':'#bfbfbf'});
+            }
+        });
+
+        let timeDisplay = document.getElementById("time");
+        function refreshTime() {
+            let dateString = new Date().toLocaleString('zh-TW', {timeZone: 'Asia/Taipei'});
+            timeDisplay.innerHTML = '現在時間: '+dateString;
+        }
+        setInterval(refreshTime, 1000);
+
+    </script>
+</body>
+</html>
