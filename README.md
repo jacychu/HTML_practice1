@@ -1,5 +1,6 @@
-### It is a website displaying my exercises.
-### The contents are mainly composed of Html and Css.
+### 20 Exercises (HTML and CSS) 
+It is a website displaying my exercises.  
+The contents are mainly composed of Html and Css.
 
   - 20.City Cafe
   - 19.Parking Lot
