@@ -1,4 +1,4 @@
-### 20 Exercises (HTML and CSS) 
+### HTML & CSS - 20 Exercises 
 It is a website displaying my exercises.  
 The contents are mainly composed of Html and Css.
 
@@ -22,3 +22,5 @@ The contents are mainly composed of Html and Css.
   - 03.Tags
   - 02.Three Tables
   - 01.Homepage
+
+Go explore the lovely details inside!
